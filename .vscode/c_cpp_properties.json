@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "ESP8266",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compileCommands": "build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

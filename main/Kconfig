@@ -1,0 +1,39 @@
+menu "ENVSENSOR"
+
+config WIFI_SSID
+    string "WiFi network SSID"
+
+config WIFI_BSSID
+    string "WiFi AP BSSID"
+    default "de:ad:be:ef:fe:ed"
+
+config WIFI_CHANNEL
+    int "WiFi AP channel"
+    default 1
+    range 1 13
+
+config ESP_IP_ADDRESS
+    string "Static IPv4 address"
+
+config ESP_IP_NETMASK
+    string "Static IPv4 netmask"
+    default "255.255.255.0"
+
+config INFLUXDB_ADDRESS
+    string "InfluxDB host IPv4 address"
+
+config INFLUXDB_PORT
+    int "InfluxDB service port"
+    default 8086
+    range 1 65535
+
+config INFLUXDB_ORG
+    string "InfluxDB organization name or ID"
+
+config INFLUXDB_BUCKET
+    string "InfluxDB bucket name or ID"
+
+config INFLUXDB_TOKEN
+    string "InfluxDB API token"
+
+endmenu
